@@ -2,8 +2,17 @@ from sqlalchemy import create_engine
 import pandas as pd
 import os
 from datetime import datetime
-from plyer import notification 
-# from urllib.parse import quote_plus  # Solo si querés codificar la contraseña automáticamente
+from plyer import notification
+
+from dotenv import load_dotenv 
+
+load_dotenv()  # Carga variables desde el archivo .env
+
+DB_USER = os.getenv("DB_USER")
+DB_PASS = os.getenv("DB_PASS").replace("@", "%40")  # encode si usás caracteres especiales
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("DB_NAME")
 
 # ---------------------------------------
 # Verifica los drivers disponibles (opcional para pyodbc, no necesario con SQLAlchemy)
@@ -16,7 +25,7 @@ from plyer import notification
 # Nota: la contraseña "ThatSenuaGuy@12248650" necesita que el "@" esté codificado como %40
 # URL = 'postgresql://usuario:contraseña@host:puerto/basededatos'
 engine = create_engine(
-    'postgresql://postgres:ThatSenuaGuy%4012248650@localhost:5432/elden_ring_database'
+    f'postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
 )
 
 # ---------------------------------------
