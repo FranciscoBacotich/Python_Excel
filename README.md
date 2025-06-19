@@ -1,9 +1,9 @@
-📊 Python Automation Toolkit for Excel & Data Workflows
+# 📊 Python Automation Toolkit for Excel & Data Workflows
 Este repositorio contiene una colección de scripts y herramientas desarrolladas en Python para automatizar tareas repetitivas relacionadas con hojas de cálculo Excel, consultas a bases de datos SQL, manejo de archivos y notificaciones de escritorio.
 
 El objetivo principal es ahorrar tiempo y reducir errores humanos al trabajar con grandes volúmenes de datos o tareas administrativas rutinarias.
 
-🔧 Tecnologías y librerías utilizadas
+# 🔧 Tecnologías y librerías utilizadas
 pandas – Manipulación y análisis de datos
 
 openpyxl / xlsxwriter – Lectura y escritura de archivos Excel
@@ -18,7 +18,7 @@ schedule / task scheduler – Automatización de tareas programadas
 
 dotenv – Manejo de variables de entorno y contraseñas seguras
 
-⚙️ Funcionalidades principales
+# ⚙️ Funcionalidades principales
 Exportación automática de resultados SQL a Excel
 
 Aplicación de formatos personalizados en reportes (.xlsx)
