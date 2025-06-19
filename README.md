@@ -29,6 +29,11 @@ Envío de alertas visuales (notificaciones) tras la finalización de tareas
 
 Organización del entorno con venv y requirements.txt
 
+
+
+
+
+
 1) Crear Un venv para el proyecto : https://docs.python.org/3/library/venv.html
     python -m venv venv
     .\venv\Scripts\activate
