@@ -15,6 +15,6 @@
 4) Instalar dependencia openpyxl si es que no vino con el pip de install pandas
     -pip install openpyxl
 
-5) En este ejemplo queremos crear un excel nuevo apartir de un df entonces aca decidimos usar: 
+5) Para crear un excel nuevo apartir de un df, aca decidimos usar: 
     -https://pypi.org/project/xlsxwriter/
     
